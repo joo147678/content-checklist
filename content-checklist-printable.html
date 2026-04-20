@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>دليل إنشاء المحتوى الشامل</title>
+    <style>
+        @page {
+            size: A4;
+            margin: 2cm;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.8;
+            color: #333;
+            background: white;
+            padding: 20px;
+            max-width: 210mm;
+            margin: 0 auto;
+        }
+
+        .header {
+            text-align: center;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px 20px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+            page-break-after: avoid;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            font-size: 1.2rem;
+            opacity: 0.95;
+        }
+
+        .phase {
+            margin-bottom: 40px;
+            page-break-inside: avoid;
+        }
+
+        .phase-header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            page-break-after: avoid;
+        }
+
+        .phase-icon {
+            font-size: 2rem;
+        }
+
+        .phase-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+
+        .step {
+            margin-bottom: 25px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 10px;
+            border-right: 4px solid #667eea;
+            page-break-inside: avoid;
+        }
+
+        .step-title {
+            font-size: 1.2rem;
+            color: #667eea;
+            font-weight: 600;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e0e0e0;
+        }
+
+        .checklist {
+            list-style: none;
+            padding: 0;
+        }
+
+        .checklist-item {
+            padding: 10px 0;
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            border-bottom: 1px solid #e9ecef;
+        }
+
+        .checklist-item:last-child {
+            border-bottom: none;
+        }
+
+        .checkbox {
+            width: 20px;
+            height: 20px;
+            border: 2px solid #667eea;
+            border-radius: 4px;
+            flex-shrink: 0;
+            margin-top: 3px;
+            background: white;
+        }
+
+        .item-text {
+            font-size: 1rem;
+            color: #333;
+            flex: 1;
+        }
+
+        .subsection {
+            margin-top: 15px;
+            padding-right: 20px;
+        }
+
+        .subsection-title {
+            font-weight: 600;
+            color: #764ba2;
+            margin-bottom: 10px;
+            font-size: 1.05rem;
+        }
+
+        .footer {
+            margin-top: 50px;
+            padding: 30px;
+            background: #f8f9fa;
+            border-radius: 10px;
+            border-right: 4px solid #4caf50;
+            page-break-inside: avoid;
+        }
+
+        .footer h3 {
+            color: #667eea;
+            margin-bottom: 15px;
+            font-size: 1.3rem;
+        }
+
+        .footer p {
+            margin: 10px 0;
+            font-size: 1.05rem;
+            line-height: 1.8;
+        }
+
+        .footer-icon {
+            margin-left: 8px;
+        }
+
+        @media print {
+            body {
+                padding: 0;
+            }
+
+            .header {
+                background: #667eea !important;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+
+            .phase-header {
+                background: #667eea !important;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+
+            .step {
+                background: #f8f9fa !important;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+
+            .footer {
+                background: #f8f9fa !important;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>📋 دليل إنشاء المحتوى الشامل</h1>
+        <p>خطوة بخطوة نحو محتوى احترافي وجذاب</p>
+    </div>
+
+    <!-- المرحلة الأولى -->
+    <div class="phase">
+        <div class="phase-header">
+            <span class="phase-icon">🎯</span>
+            <h2 class="phase-title">المرحلة الأولى: التحضير والإعداد</h2>
+        </div>
+
+        <div class="step">
+            <h3 class="step-title">✅ الخطوة 1: تحديد البيرسونا والبوزيشن</h3>
+            
+            <div class="subsection">
+                <div class="subsection-title">البيرسونا (الجمهور المستهدف):</div>
+                <ul class="checklist">
+                    <li class="checklist-item">
+                        <div class="checkbox"></div>
+                        <span class="item-text">تحديد السن</span>
+                    </li>
+                    <li class="checklist-item">
+                        <div class="checkbox"></div>
+                        <span class="item-text">تحديد الاهتمامات</span>
+                    </li>
+                    <li class="checklist-item">
+                        <div class="checkbox"></div>
+                        <span class="item-text">تحديد المشاكل اللي عندهم</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="subsection">
+                <div class="subsection-title">البوزيشن (هويتك):</div>
+                <ul class="checklist">
+                    <li class="checklist-item">
+                        <div class="checkbox"></div>
+                        <span class="item-text">توضيح مين أنت</span>
+                    </li>
+                    <li class="checklist-item">
+                        <div class="checkbox"></div>
+                        <span class="item-text">توضيح بتعمل إيه بالظبط</span>
+                    </li>
+                    <li class="checklist-item">
+                        <div class="checkbox"></div>
+                        <span class="item-text">التأكد إن أي حد يدخل البروفايل يفهم بتعمل إيه بوضوح وبساطة</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="step">
+            <h3 class="step-title">✅ الخطوة 2: تحديد المجال (Niche)</h3>
+            <ul class="checklist">
+                <li class="checklist-item">
+                    <div class="checkbox"></div>
+                    <span class="item-text">اختيار niche واحد محدد</span>
+                </li>
+                <li class="checklist-item">
+                    <div class="checkbox"></div>
+                    <span class="item-text">التركيز على المجال ده فقط</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- المرحلة الثانية -->
+    <div class="phase">
+        <div class="phase-header">
+            <span class="phase-icon">🔍</span>
+            <h2 class="phase-title">المرحلة الثانية: البحث والأفكار</h2>
+        </div>
+
+        <div class="step">
+            <h3 class="step-title">✅ الخطوة 3: عمل Research للمواضيع الـ Viral</h3>
+            
+            <div class="subsection">
+                <div class="subsection-title">1. Instagram Reels:</div>
+                <ul class="checklist">
+                    <li class="checklist-item">
+                        <div class="checkbox"></div>
+                        <span class="item-text">البحث عن الـ niche بتاعك</span>
+                    </li>
+                    <li class="checklist-item">
+                        <div class="checkbox"></div>
+                        <span class="item-text">مشاهدة الفيديوهات آخر 3 شهور</span>
+                    </li>
+                    <li class="checklist-item">
+                        <div class="checkbox"></div>
+                        <span class="item-text">تحديد الفيديوهات اللي جابت أكتر من 1M views</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="subsection">
+                <div class="subsection-title">2. TikTok Creative Centre:</div>
+                <ul class="checklist">
+                    <li class="checklist-item">
+                        <div class="checkbox"></div>
+                        <span class="item-text">البحث عن الـ niche بتاعك</span>
+                    </li>
+                    <li class="checklist-item">
+                        <div class="checkbox"></div>
+                        <span class="item-text">مشاهدة الفيديوهات آخر 3 شهور</span>
+                    </li>
+                    <li class="checklist-item">
+                        <div class="checkbox"></div>
+                        <span class="item-text">تحديد الفيديوهات اللي جابت أكتر من 1M views</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="subsection">
+                <div class="subsection-title">3. استخدام AI Tools (Gemini - Claude - Perplexity):</div>
+                <ul class="checklist">
+                    <li class="checklist-item">
+                        <div class="checkbox"></div>
+                        <span class="item-text">إعطاء الـ AI كل المعلومات عنك (البيرسونا - المجال - البوزيشن)</span>
+                    </li>
+                    <li class="checklist-item">
+                        <div class="checkbox"></div>
+                        <span class="item-text">طلب research عن أهم المواضيع آخر 3 شهور</span>
+                    </li>
+                    <li class="checklist-item">
+                        <div class="checkbox"></div>
+                        <span class="item-text">تحديد المواضيع اللي حققت أعلى من مليون مشاهدة</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- المرحلة الثالثة -->
+    <div class="phase">
+        <div class="phase-header">
+            <span class="phase-icon">✍️</span>
+            <h2 class="phase-title">المرحلة الثالثة: كتابة السكريبت</h2>
+        </div>
+
+        <div class="step">
+            <h3 class="step-title">✅ الخطوة 4: كتابة الاسكريبت</h3>
+            
+            <div class="subsection">
+                <div class="subsection-title">1. تحديد الشعور:</div>
+                <ul class="checklist">
+                    <li class="checklist-item">
+                        <div class="checkbox"></div>
+                        <span class="item-text">كتابة الشعور اللي عاوز توصله للمشاهد</span>
+                    </li>
+                    <li class="checklist-item">
+                        <div class="checkbox"></div>
+                        <span class="item-text">التأكد إنك حاسس بالشعور ده بعد ما تخلص كتابة</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="subsection">
+                <div class="subsection-title">2. كتابة عناصر الموضوع:</div>
+                <ul class="checklist">
+                    <li class="checklist-item">
+                        <div class="checkbox"></div>
+                        <span class="item-text">كتابة النقط الأساسية للموضوع</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="subsection">
+                <div class="subsection-title">3. اختيار نوع الـ Hook:</div>
+                <ul class="checklist">
+                    <li class="checklist-item">
+                        <div class="checkbox"></div>
+                        <span class="item-text">اختيار الـ hook المناسب لمجالك والموضوع</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="subsection">
+                <div class="subsection-title">4. اختيار هيكل القصة:</div>
+                <ul class="checklist">
+                    <li class="checklist-item">
+                        <div class="checkbox"></div>
+                        <span class="item-text">اختيار الهيكل المناسب لمجالك والموضوع</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="subsection">
+                <div class="subsection-title">5. كتابة الاسكريبت:</div>
+                <ul class="checklist">
+                    <li class="checklist-item">
+                        <div class="checkbox"></div>
+                        <span class="item-text">ترتيب الـ hook والأفكار</span>
+                    </li>
+                    <li class="checklist-item">
+                        <div class="checkbox"></div>
+                        <span class="item-text">الاستعانة بـ Claude أو Gemini (اختياري)</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="subsection">
+                <div class="subsection-title">6. مراجعة الاسكريبت (4 أسئلة):</div>
+                <ul class="checklist">
+                    <li class="checklist-item">
+                        <div class="checkbox"></div>
+                        <span class="item-text">هل القصة تشد؟</span>
+                    </li>
+                    <li class="checklist-item">
+                        <div class="checkbox"></div>
+                        <span class="item-text">هل القصة مختصرة قدر الإمكان؟</span>
+                    </li>
+                    <li class="checklist-item">
+                        <div class="checkbox"></div>
+                        <span class="item-text">الـ hook شدني ولا لا؟</span>
+                    </li>
+                    <li class="checklist-item">
+                        <div class="checkbox"></div>
+                        <span class="item-text">إيه الإحساس اللي حسيته لما خلصت قراية؟</span>
+                    </li>
+                    <li class="checklist-item">
+                        <div class="checkbox"></div>
+                        <span class="item-text">لو مش حاسس بالشعور المطلوب: إعادة صياغة أو كتابة الاسكريبت تاني</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- المرحلة الرابعة -->
+    <div class="phase">
+        <div class="phase-header">
+            <span class="phase-icon">🎬</span>
+            <h2 class="phase-title">المرحلة الرابعة: التحضير للتصوير</h2>
+        </div>
+
+        <div class="step">
+            <h3 class="step-title">✅ الخطوة 5: تحديد زوايا وأماكن التصوير</h3>
+            
+            <div class="subsection">
+                <div class="subsection-title">تخيل الاسكريبت متصور:</div>
+                <ul class="checklist">
+                    <li class="checklist-item">
+                        <div class="checkbox"></div>
+                        <span class="item-text">تحديد المكان المناسب (البيت - جيم - نادي - مكتب - وأنت شغال)</span>
+                    </li>
+                    <li class="checklist-item">
+                        <div class="checkbox"></div>
+                        <span class="item-text">تحديد لو محتاج B-rolls من اليوم</span>
+                    </li>
+                    <li class="checklist-item">
+                        <div class="checkbox"></div>
+                        <span class="item-text">تحديد زوايا التصوير لكل cut بناءً على القصة والهدف</span>
+                    </li>
+                    <li class="checklist-item">
+                        <div class="checkbox"></div>
+                        <span class="item-text">الاستعانة بـ Claude أو Gemini لتحديد الزوايا</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="step">
+            <h3 class="step-title">✅ الخطوة 6: التنظيم والجدولة</h3>
+            <ul class="checklist">
+                <li class="checklist-item">
+                    <div class="checkbox"></div>
+                    <span class="item-text">تنظيم كل حاجة في Notion في جدول</span>
+                </li>
+                <li class="checklist-item">
+                    <div class="checkbox"></div>
+                    <span class="item-text">تحديد أيام التصوير (يوم أو يومين)</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- المرحلة الخامسة -->
+    <div class="phase">
+        <div class="phase-header">
+            <span class="phase-icon">🎥</span>
+            <h2 class="phase-title">المرحلة الخامسة: الإنتاج</h2>
+        </div>
+
+        <div class="step">
+            <h3 class="step-title">✅ الخطوة 7: التصوير والمونتاج</h3>
+            <ul class="checklist">
+                <li class="checklist-item">
+                    <div class="checkbox"></div>
+                    <span class="item-text">تصوير الفيديوهات حسب الجدول</span>
+                </li>
+                <li class="checklist-item">
+                    <div class="checkbox"></div>
+                    <span class="item-text">إدخال الفيديوهات باتشات في المونتاج</span>
+                </li>
+                <li class="checklist-item">
+                    <div class="checkbox"></div>
+                    <span class="item-text">مونتاج الفيديوهات</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- المرحلة السادسة -->
+    <div class="phase">
+        <div class="phase-header">
+            <span class="phase-icon">📊</span>
+            <h2 class="phase-title">المرحلة السادسة: التحليل والتحسين</h2>
+        </div>
+
+        <div class="step">
+            <h3 class="step-title">✅ الخطوة 8: تحليل الـ Insights (أسبوعياً)</h3>
+            <ul class="checklist">
+                <li class="checklist-item">
+                    <div class="checkbox"></div>
+                    <span class="item-text">تحليل الـ insights باستخدام Claude</span>
+                </li>
+                <li class="checklist-item">
+                    <div class="checkbox"></div>
+                    <span class="item-text">معرفة أنواع الفيديوهات اللي شغالة</span>
+                </li>
+                <li class="checklist-item">
+                    <div class="checkbox"></div>
+                    <span class="item-text">معرفة أنواع الفيديوهات اللي مش شغالة</span>
+                </li>
+                <li class="checklist-item">
+                    <div class="checkbox"></div>
+                    <span class="item-text">كتابة التحسينات المطلوبة</span>
+                </li>
+                <li class="checklist-item">
+                    <div class="checkbox"></div>
+                    <span class="item-text">تطبيق التحسينات في الأسبوع اللي بعده</span>
+                </li>
+                <li class="checklist-item">
+                    <div class="checkbox"></div>
+                    <span class="item-text">تقليل الأنواع اللي مش شغالة</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <h3>💡 ملاحظات مهمة</h3>
+        <p><span class="footer-icon">✅</span> الاستمرارية والالتزام بالخطوات أساس النجاح</p>
+        <p><span class="footer-icon">📈</span> التحليل الأسبوعي يساعدك تتحسن باستمرار</p>
+        <p><span class="footer-icon">🤖</span> الـ AI أداة مساعدة مش بديل عن إبداعك</p>
+    </div>
+</body>
+</html>
